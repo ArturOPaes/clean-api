@@ -3,9 +3,11 @@
   "parserOptions": {
     "project": "./tsconfig.json"
   },
+  "plugins": ["prettier"],
   "rules": {
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/return-await": "off",
-    "@typescript-eslint/comma-spacing": "off"
+    "@typescript-eslint/comma-spacing": "off",
+    "@typescript-eslint/space-before-function-paren": "off"
   }
 }
