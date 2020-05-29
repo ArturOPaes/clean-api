@@ -11,12 +11,12 @@ import { badRequest, serverError, ok } from '../../helpers/http-helper'
 export class SignUpController implements Controller {
   private readonly emailValidator: EmailValidator
   private readonly addAccount: AddAccount
-  constructor (emailValidator: EmailValidator, addAccount: AddAccount) {
+  constructor(emailValidator: EmailValidator, addAccount: AddAccount) {
     this.emailValidator = emailValidator
     this.addAccount = addAccount
   }
 
-  async handle (httpRequest: HttpRequest): Promise<HttpResponse> {
+  async handle(httpRequest: HttpRequest): Promise<HttpResponse> {
     try {
       const requiredFields = [
         'name',
@@ -41,7 +41,7 @@ export class SignUpController implements Controller {
       return ok(account)
     } catch (error) {
       console.error(error)
-      return serverError()
+      return serverError(error)
     }
   }
 }
