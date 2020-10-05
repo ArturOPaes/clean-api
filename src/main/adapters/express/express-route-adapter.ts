@@ -2,7 +2,7 @@ import {
   Controller,
   HttpRequest,
   HttpResponse
-} from '../../presentation/protocols'
+} from '../../../presentation/protocols'
 import { Request, Response } from 'express'
 
 export const adaptRoute = (controller: Controller) => {
