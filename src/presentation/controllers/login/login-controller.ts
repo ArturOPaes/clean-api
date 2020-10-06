@@ -25,6 +25,7 @@ export class LoginController implements Controller {
     try {
       const error = this.validation.validate(httpRequest.body)
       if (error) {
+        console.log(error)
         return badRequest(error)
       }
       const { email, password } = httpRequest.body
