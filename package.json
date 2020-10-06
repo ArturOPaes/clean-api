@@ -14,7 +14,7 @@
     "test:staged": "npm test -- --findRelatedTests",
     "test:ci": "npm test -- --coverage"
   },
-  "author": "",
+  "author": "Artur Paes",
   "license": "ISC",
   "devDependencies": {
     "@shelf/jest-mongodb": "^1.1.5",
@@ -49,5 +49,8 @@
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.5.7",
     "validator": "^13.0.0"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }
