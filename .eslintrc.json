@@ -9,6 +9,7 @@
     "@typescript-eslint/return-await": "off",
     "@typescript-eslint/comma-spacing": "off",
     "space-before-function-paren": "off",
-    "@typescript-eslint/indent": "off"
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/space-before-function-paren": "off"
   }
 }
