@@ -13,10 +13,9 @@ services:
     image: node:12
     working_dir: /usr/ws/clean-api
     restart: always
-    image: clean-api
     command: bash -c "npm install --only=prod && npm run debug"
     volumes:
-      - ./dist:/usr/ws/clean-api/dist
+      - ./dist/:/usr/ws/clean-api/dist/
       - ./package.json:/usr/ws/clean-api/package.json
     ports:
       - '5050:5050'
