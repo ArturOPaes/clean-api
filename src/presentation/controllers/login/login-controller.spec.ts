@@ -15,7 +15,7 @@ import {
 
 const makeValidation = (): Validation => {
   class ValidationStub implements Validation {
-    validate(input: any): Error {
+    validate (input: any): Error {
       return null
     }
   }
@@ -24,7 +24,7 @@ const makeValidation = (): Validation => {
 
 const makeAuthentication = (): Authentication => {
   class AuthenticationStub implements Authentication {
-    async auth(authenticationModel: AuthenticationModel): Promise<string> {
+    async auth (authenticationModel: AuthenticationModel): Promise<string> {
       return new Promise((resolve) => resolve('any_token'))
     }
   }

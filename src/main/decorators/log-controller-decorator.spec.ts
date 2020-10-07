@@ -10,7 +10,7 @@ import { AccountModel } from '../../domain/models/account'
 
 const makeLogErrorRepository = (): LogErrorRepository => {
   class LogErrorRepositoryStub implements LogErrorRepository {
-    async logError(stack: string): Promise<void> {
+    async logError (stack: string): Promise<void> {
       return new Promise((resolve) => resolve())
     }
   }
@@ -20,7 +20,7 @@ const makeLogErrorRepository = (): LogErrorRepository => {
 
 const makeController = (): Controller => {
   class ControllerStub implements Controller {
-    async handle(httpRequest: HttpRequest): Promise<HttpResponse> {
+    async handle (httpRequest: HttpRequest): Promise<HttpResponse> {
       return new Promise((resolve) => resolve(ok(makeFakeAccount())))
     }
   }

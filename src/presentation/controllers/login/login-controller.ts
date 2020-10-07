@@ -13,7 +13,7 @@ import {
 } from '../../helpers/http/http-helper'
 
 export class LoginController implements Controller {
-  constructor(
+  constructor (
     private readonly validation: Validation,
     private readonly authentication: Authentication
   ) {
@@ -21,7 +21,7 @@ export class LoginController implements Controller {
     this.authentication = authentication
   }
 
-  async handle(httpRequest: HttpRequest): Promise<HttpResponse> {
+  async handle (httpRequest: HttpRequest): Promise<HttpResponse> {
     try {
       const error = this.validation.validate(httpRequest.body)
       if (error) {
