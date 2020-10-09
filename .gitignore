@@ -3,6 +3,7 @@ dist
 coverage
 .data
 data
+!src/data
 globalConfig.json
 ./globalConfig.json
 globalConfig
