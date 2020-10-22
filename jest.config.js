@@ -4,12 +4,15 @@ module.exports = {
     '<rootDir>/src/**/*.ts',
     '!<rootDir>/src/**/*-protocols.ts',
     '!<rootDir>/src/main/**',
-    '!**/protocols/**',
+    '!**/protocols/**'
   ],
   coverageDirectory: 'coverage',
   testEnvironment: 'node',
   preset: '@shelf/jest-mongodb',
   transform: {
-    '.*\\.ts$': 'ts-jest',
+    '.*\\.ts$': 'ts-jest'
   },
+  moduleNameMapper: {
+    '@/(.*)': '<rootDir>/src/$1'
+  }
 }

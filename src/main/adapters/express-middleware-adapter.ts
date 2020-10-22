@@ -2,7 +2,7 @@ import {
   HttpRequest,
   HttpResponse,
   Middleware
-} from '../../presentation/protocols'
+} from '@/presentation/protocols'
 import { Request, Response, NextFunction } from 'express'
 
 export const adaptMiddleware = (middleware: Middleware) => {
