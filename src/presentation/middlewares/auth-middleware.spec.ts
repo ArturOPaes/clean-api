@@ -22,7 +22,7 @@ class LoadAccountByTokenStub implements LoadAccountByToken {
   }
 }
 
-interface SutTypes {
+type SutTypes = {
   sut: AuthMiddleware
   loadAccountByTokenStub: LoadAccountByToken
 }

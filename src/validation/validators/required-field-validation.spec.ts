@@ -1,7 +1,7 @@
 import { RequiredFieldValidation } from './required-field-validation'
 import { MissingParamError } from '@/presentation/errors'
 
-interface SutTypes {
+type SutTypes = {
   sut: RequiredFieldValidation
 }
 
